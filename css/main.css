@@ -1,23 +1,23 @@
 /* globaaaal */
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body,button{
+body, button {
     font-family: "Alegreya Sans";
     font-size: 17px;
 }
 
-h1{
+h1 {
     font-family: "Alegreya";
     font-weight: 300;
     font-size: 76px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -32,22 +32,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 400;
 }
 
-p{
+h4 {
+    font-size: 22px;
+}
+
+p {
     color: teal;
 }
-/* globaaaal */
 
-
+/* Home Section */
 .home .icon {
     margin-right: 20px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
 }
 
-nav{
+nav {
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
@@ -64,9 +67,9 @@ nav{
     position: relative;
 }
 
-.home .overlay{
+.home .overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%;
 }
@@ -78,20 +81,18 @@ nav{
     font-size: 18px;
 }
 
-
-
-.home-top-heading{
+.home-top-heading {
     font-size: 24px;
-    color: white
+    color: white;
 }
 
-.home-heading{
+.home-heading {
     margin-bottom: 18px;
     line-height: 1.2em;
-    color: white
+    color: white;
 }
 
-.home #text1 button{
+.home #text1 button {
     border: none;
     font-size: 18px;
     background-color: transparent;
@@ -101,13 +102,13 @@ nav{
     border-radius: 5px;
 }
 
-.home .buttons{
+.home .buttons {
     display: flex;
     justify-content: center;
     column-gap: 15px;
 }
 
-.home #text1{
+.home #text1 {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -117,11 +118,12 @@ nav{
     text-align: center;
 }
 
-.home .subtittle{
+.home .subtittle {
     color: white;
 }
-/* whoooooooooooooooooooooooo */
-.who_we_are{
+
+/* Who We Are Section */
+.who_we_are {
     margin-bottom: 50px;
 }
 
@@ -134,6 +136,7 @@ nav{
 }
 
 .who_we_are .text {
+    padding-left: 50px;
     display: inline-block;
     width: 700px;
     margin-top: 75px;
@@ -144,12 +147,9 @@ nav{
 
 .text img {
     width: 50px;
-    display: inline-block; 
-    vertical-align:text-top ;
-    
+    display: inline-block;
+    vertical-align: text-top;
 }
-
-
 
 .text span {
     display: inline-block;
@@ -158,103 +158,95 @@ nav{
     vertical-align: bottom;
     margin-bottom: 20px;
 }
-/* our location */
-.our_location{
+
+/* Our Location Section */
+.our_location {
     padding-bottom: 20px;
 }
 
-.location-img{
+.location-img {
     display: inline-block;
-    margin-top: 90px;
+    margin-top: 50px;
     width: 600px;
     vertical-align: top;
 }
 
 .text2 {
+    padding-left: 50px;
     display: inline-block;
     width: 500px;
     line-height: 1.5;
     font-size: 20px;
     margin-left: 120px;
     margin-right: 100px;
-    position: relative;
-    top: 120px;
+    margin-top: 120px;
 }
 
-
-
-
-.s4{
-    margin-top: 50px;
-    margin-left: 150px;
+/* Baking Section */
+/* Baking Section */
+.s4 {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px; /* Add space between cards */
+    padding: 20px; /* Add padding around the section */
+    margin: 0 auto; /* Center the section itself */
 }
 
-.s4 p{
-    margin-left: 70px;
-    width: 400px;
+.s4 > div {
+    background: #fff; /* Card background color */
+    width: 30%;
     text-align: center;
-    margin-left: -10px;
-    line-height: 1.5;
-    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.s4 div{
-    float: left;
-    width: 320px;
-    margin-right: 120px;
-    
-}
-
-.clear-fix{
-    clear: both;
-}
-
-#s4_tittle{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 20px;
+.s4 img {
+    width: 100%; /* Ensure images take full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Add border between image and text */
 }
 
 
-
-
-
-span{
+.s4 h3 {
     font-size: 40px;
     color: #000;
-}
-
-.s4 img{
+    font-weight: bold;
     display: block;
-    width: 400px;
-    margin-right: -10px;
+    margin-bottom: 10px;
 }
 
-/* .contact_inf{
-    text-align: center;
-} */
 
-.s5{
+
+#s4_tittle {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+
+/* Contact Information Section */
+.s5 {
     margin-top: 50px;
 }
 
-.contact-inf,
-.map{
+.contact-inf, .map {
     display: inline-block;
 }
 
-.contact-inf{
+.contact-inf {
     padding-top: 100px;
     padding-left: 50px;
     width: 700px;
     margin-left: 120px;
 }
 
-.map{
+.map {
     padding: 50px;
 }
 
-.s5 img{
+.s5 img {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
@@ -263,110 +255,198 @@ span{
     border-radius: 50%;
 }
 
-.s5 span{
+.s5 span {
     line-height: 1.5;
     font-size: 20px;
     vertical-align: 40%;
     color: teal;
 }
 
-.s5 p{
+.s5 p {
     line-height: 1.5;
     font-size: 20px;
 }
 
-/* //////////////////////////////////////////////////////////////////////////// */
-
-#foot img{
+/* Footer */
+#foot img {
     width: 30px;
     margin-right: 20px;
 }
 
-#foot ul{
+#foot ul {
     list-style: none;
 }
 
-#foot a{
+#foot a {
     text-decoration: none;
 }
 
-#about-us{
+#about-us {
     padding-left: 20px;
 }
 
-#foot p{
+#foot p {
     padding-top: 20px;
 }
 
-#about-us,
-#Why-we-are-special,
-#Opening-Hours,
-#Contact-Details{
+#about-us, #Why-we-are-special, #Opening-Hours, #Contact-Details {
     float: left;
     width: 25%;
     height: 400px;
-    background-color:#403d38 ;
+    background-color: #403d38;
     padding-top: 30px;
 }
 
-#Opening-Hours{
+#Opening-Hours {
     width: 22%;
 }
 
-#Contact-Details{
+#Contact-Details {
     width: 28%;
     background-image: url('../bakery images/images/contact-details-map.png');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#foot div span{
+#foot div span {
     color: white;
     font-size: 20px;
 }
 
-#foot div{
+#foot div {
     font-size: 16px;
 }
 
-
-
-#foot li{
+#foot li {
     line-height: 3;
 }
 
-#foot hr{
+#foot hr {
     width: 70%;
-
 }
 
-#foot div{
+#foot div {
     color: #969696;
 }
 
-#foot p{
+#foot p {
     color: #969696;
     line-height: 2;
 }
 
-/* a{
-    color: #969696;
-} */
-
-.clear-fix{
+.clear-fix {
     clear: both;
 }
-/* ///////////////////////////////////////////////////////// */
-.apps .app img{
+
+.apps .app img {
     margin-top: 20px;
     margin-left: 10px;
     background-color: #403d38;
     width: 40px;
     border-radius: 50%;
 }
-.apps{
+
+.apps {
     padding-top: 20px;
     text-align: center;
     height: 300px;
     background-color: #353330;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .home #text1 {
+        top: 60%;
+        width: 90%;
+    }
+
+    .home .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .who, .text, .location-img, .text2, .s4 div {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .who_we_are .text, .text2, .contact-inf {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .s4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .s4 div {
+        margin: 20px;
+    }
+
+    #foot div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+
+    .apps {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home .links a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .home-heading {
+        font-size: 48px;
+    }
+
+    .home .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text2, .contact-inf {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 90%;
+    }
+
+    .home-heading {
+        font-size: 36px;
+    }
+
+    .home-top-heading {
+        font-size: 18px;
+    }
+
+    .home #text1 button {
+        font-size: 16px;
+    }
+
+    .home .buttons button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .s4 img {
+        width: 100%;
+    }
+
+    .apps {
+        padding-top: 10px;
+    }
 }
